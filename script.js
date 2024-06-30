@@ -4,6 +4,7 @@ addEventListener("DOMContentLoaded", (event) => {
     let productCount;
 
     async function fetchProductData(count) {
+        document.getElementById("loadingMessage").textContent='Loading...'
         document.getElementById("productName").textContent = '';
         document.getElementById("productPicture").src = '';
         document.getElementById("productPicture").textContent = '';
@@ -29,9 +30,16 @@ addEventListener("DOMContentLoaded", (event) => {
         }
         catch {
             console.log('Something went wrong');
+
         }
-        
+        finally {
+            document.getElementById("loadingMessage").textContent="";
+
+        }
     }
+
+    
 
 
 })
+
