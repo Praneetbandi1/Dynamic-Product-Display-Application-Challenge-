@@ -1,0 +1,40 @@
+h2{
+    background-color:green
+    border none;
+    color: white;
+    padding: 15px 32px;
+    text-align:center;
+    text-decoration:none;
+    display: inline-block;
+    font-size: 20px;
+
+
+}
+   
+
+#productname:first-letter {
+    text-transform:uppercase;
+    font-style:italic;
+
+}
+
+#productDescription {
+    width: 400px;
+    height: auto;
+
+}
+
+body {
+    background-color: rgb (201,161,132);
+    color: saddlebrown;
+}
+
+button {
+    background-color:green;
+     border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+ 
+
+}
