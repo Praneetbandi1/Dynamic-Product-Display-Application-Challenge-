@@ -38,6 +38,18 @@ addEventListener("DOMContentLoaded", (event) => {
         }
     }
 
+    const previousBtn=document.getElementById("previous")
+    previousBtn.addEventListener("click",function() {
+        productCount=(productCount>0) ?--productCount: 21
+        fetchProductData(productCount);
+
+    })
+    const nextBtn=document.getElementById("next")
+    nextBtn.addEventListener("click",function(){
+productCount=(productCount<21) ? ++productCount :0
+fetchProductData(productCount);
+
+    })
     
 
 
